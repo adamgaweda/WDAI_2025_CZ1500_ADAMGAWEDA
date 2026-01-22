@@ -1,0 +1,126 @@
+body {
+    font-family: "Arial";
+    background-color: #f7f8fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #b8b8b8;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header label {
+    font-weight: bold;
+}
+
+header input,
+header select,
+header button {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+header button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+thead th:nth-child(2) {
+    min-width: 100px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+tbody td:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+tbody td:nth-child(3) {
+    color: #666;
+}
+
+tbody td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    tbody td:nth-child(1) {
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+    }
+}
