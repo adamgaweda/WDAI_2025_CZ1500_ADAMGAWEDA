@@ -1,0 +1,30 @@
+.container {
+    padding: 20px;
+}
+
+input {
+    margin-right: 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.recipes.animate .card {
+    animation: move 0.5s ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
